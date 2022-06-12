@@ -1,0 +1,204 @@
+*{
+    font-size: 14px;
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    
+    
+   
+}
+body{
+    font-family: 'Helvetica regular', sans-serif;
+    color:var(--e-global-color-64a05cb8);
+    font-size: 18px;
+    font-weight: 300;
+   
+}
+:root{
+    --e-global-color-primary: #6EC1E4;
+    --e-global-color-secondary: #54595F;
+    --e-global-color-text: #7A7A7A;
+    --e-global-color-accent: #61CE70;
+    --e-global-color-2028b8ba: #4054B2;
+    --e-global-color-459538ba: #23A455;
+    --e-global-color-64a05cb8: #000;
+    --e-global-color-3605e54b: #FFF;
+}
+html{
+    font-size: 62.5%;
+}
+.container-imagen{
+    width: 120px;
+    height: 100px;
+    
+}
+
+.img-axia{
+    /* display: block; */
+    width: 90%;
+    height: 70%;
+    
+}
+
+nav{
+    display: flex;
+    flex-direction: column;
+    opacity: 0.8;
+    
+}
+
+.navbar-left{
+    display: flex;
+    background-color:#06175a;
+    height: 80px;
+   
+    /* opacity: 0.7; */
+    
+}
+
+.navbar-left ul {
+    display: flex;
+   align-items: center;
+   
+}
+
+.navbar-left ul li {
+    list-style: none;
+   
+    
+ 
+}
+.navbar-left ul li a{
+text-decoration: none;
+color: var(--e-global-color-3605e54b);
+font-size: 15px;
+padding: 4px;
+font-family: Helvetica, sans-serif;
+font-weight: 100;
+letter-spacing: 2px;
+font-style: normal;
+
+}
+.navbar-left ul li a:nth-child(1){
+    margin-left: 10px;
+    
+    }
+
+
+/* #formulario */
+.contenedor-info{
+display: grid;
+grid-template-columns:200px 300px;
+grid-template-rows: repeat(5,50px);
+grid-auto-rows: 50px;
+width: 50vw;
+gap: 2px;
+margin-top: 20px;
+margin-left: 10px;
+
+}
+
+.contenedor-info span{
+    color:var(--e-global-color-64a05cb8);
+    font-family: Helvetica, sans-serif;
+    
+
+}
+.contenedor-info input{
+    width: 300px;
+    height: 25px;
+  
+}
+
+.container-activos{
+    
+    display: grid;
+    grid-template-columns:200px 300px;
+    grid-template-rows: repeat(5,50px);
+    grid-auto-rows: 50px;
+    width: 50vw;
+    gap: 2px;
+    margin-top: 20px;
+    margin-left: 10px;
+    /* border: 1px solid black; */
+}
+.container-activos input{
+    width: 300px;
+    height: 25px;
+}
+section{
+    display: flex;
+
+}
+
+
+.navbar-shopping div{
+width: 16px;
+height: 16px;
+background-color: var(--hospital-grenn);
+border-radius: 50%;
+font-size: var(--sm);
+font-weight: bold;
+position: absolute;
+top:-6px;
+right: -3px;
+display: flex;
+justify-content: center;
+align-items: center;}
+
+
+button{
+    color: #06175a;
+    border-radius: 30px;
+  grid-column: 1/3;
+  justify-self: center;
+  padding: 5px;
+}
+
+ 
+
+
+
+
+
+
+
+
+@media (max-width:640px) {
+    .logo{
+        display: block;
+
+
+    }
+    .secundary-button{
+        margin-top:100px ;
+    }
+
+    .card-container{
+        
+        grid-template-columns: repeat(auto-fill,140px);
+      
+        
+    
+    }
+
+    .prod-card{
+        width: 140px;
+        }
+        
+    .prod-card img{
+        width: 140px;
+        height: 140px;
+            
+    
+}
+.menu{
+    display: block;
+}
+.navbar-left ul{
+    display: none;
+}
+.navbar-email{
+    display: none;
+}
+}
